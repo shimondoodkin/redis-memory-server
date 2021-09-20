@@ -40,6 +40,7 @@ function isModuleExists(name) {
 (async () => {
   if (!isModuleExists('../lib/util/resolve-config')) {
     console.log('Could not find built ts files, running tsc');
+    await exec('npm install --only=dev');
     await exec('npm run build');
   }
 
