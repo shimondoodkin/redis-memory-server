@@ -13,8 +13,7 @@
   },
   "files": [
     "lib",
-    "scripts",
-    "src"
+    "scripts"
   ],
   "keywords": [
     "redis",
